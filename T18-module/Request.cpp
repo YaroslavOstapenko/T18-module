@@ -9,6 +9,7 @@ Request::Request()
 Request::Request(string name, string number, Car* obj)
     :name(name),number(number)
 {
+    
     arr.push_back(obj);
 }
 
@@ -19,7 +20,7 @@ string Request::getName() const
 
 void Request::setName(string name)
 {
-    if (name.length()>5)
+    if (name.length()<=0)
     {
         this->name = name;
     }
