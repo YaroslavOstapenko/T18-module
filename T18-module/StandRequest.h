@@ -3,8 +3,8 @@
 class StandRequest :public Request
 {
 public:
-	virtual void show() const = 0;
-	virtual string type()const = 0;
-	virtual float calcPrice() const = 0;
+	virtual void show() const override;
+	virtual string type()const override;
+	virtual float calcPrice() const override;
 };
 
