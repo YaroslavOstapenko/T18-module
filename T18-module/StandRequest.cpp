@@ -2,6 +2,9 @@
 
 void StandRequest::show() const
 {
+	cout << "ФИО" << name<<endl;
+	cout << "Номер" << number<<endl;
+	Request::getCarList();
 }
 
 string StandRequest::type() const
@@ -11,5 +14,9 @@ string StandRequest::type() const
 
 float StandRequest::calcPrice() const
 {
-	return 0.0f;
+	
+	for (int i = 0; i < arr.size(); i++)
+	{
+		return arr[i].getPrice();
+	}
 }

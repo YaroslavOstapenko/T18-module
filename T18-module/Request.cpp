@@ -38,9 +38,9 @@ void Request::setNumber(string number)
     }
 }
 
-vector<Car> Request::getCarList()
+vector<Car*> Request::getCarList()
 {
-    return vector<Car>();
+    return vector<Car*>();
 }
 
 void Request::addCar(Car* obj)
