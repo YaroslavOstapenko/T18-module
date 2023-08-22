@@ -4,7 +4,7 @@ void StandRequest::show() const
 {
 	cout << "ФИО" << name<<endl;
 	cout << "Номер" << number<<endl;
-	Request::getCarList;
+	Request::getCarList();
 }
 
 string StandRequest::type() const
