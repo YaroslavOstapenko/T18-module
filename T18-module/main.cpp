@@ -1,20 +1,34 @@
-﻿// T18-module.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
-
-#include <iostream>
-
+﻿#include <iostream>
 int main()
 {
-    std::cout << "Hello World!\n";
+    setlocale(0, "");
+    
+    int menu;
+
+    do
+    {
+        cout << "1 - Добавить автомобиль\n";
+        cout << "2 - Удалить автомобиль\n";
+        cout << "3 - Вывести всех\n";
+        cout << "4 - Редактировать автомобиль\n";
+        cout << "5 - Поиск автомобиля\n";
+        cout << "0 - EXIT\n";
+        cin >> menu;
+        cin.ignore();
+        switch (menu)
+        {
+        case 1:ITStep.addItem(); break;
+        case 2:ITStep.delItem(); break;
+        case 3:ITStep.printItems(); break;
+        case 4:ITStep.editItem(); break;
+        case 5:ITStep.findItem(); break;
+        case 6:ITStep.saveTofile(); break;
+        case 7:ITStep.readFromfile(); break;
+
+        default:
+            cout << "Ошибка выбора\n";
+            break;
+        }
+    } while (menu!=0);
+
 }
-
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
