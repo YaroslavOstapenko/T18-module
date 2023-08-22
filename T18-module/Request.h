@@ -24,8 +24,8 @@ public:
 	void addCar(Car obj);
 	void delCar(int index);
 
-	virtual void show() const;
-	virtual string type()const;
+	virtual void show() const=0;
+	virtual string type()const=0;
 	virtual float calcPrice() const = 0;
 
 };
