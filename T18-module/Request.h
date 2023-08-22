@@ -1,6 +1,7 @@
 #pragma once
 #include <string>
 #include <vector>
+#include <algorithm>
 #include "Car.h"
 using namespace std;
 
@@ -9,10 +10,10 @@ class Request
 protected:
 	string name;
 	string number;
-	vector<Car> arr;
+	vector<Car*> arr;
 public:
 	Request();
-	Request(string name,string number,Car obj);
+	Request(string name,string number,Car* obj);
 
 	string getName()const;
 	void setName(string name);
@@ -21,7 +22,7 @@ public:
 	void setNumber(string number);
 
 	vector<Car> getCarList();
-	void addCar(Car obj);
+	void addCar(Car* obj);
 	void delCar(int index);
 
 	virtual void show() const=0;
