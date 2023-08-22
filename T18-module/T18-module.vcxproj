@@ -132,7 +132,7 @@
     <ClCompile Include="DeliveryRequest.cpp" />
     <ClCompile Include="Request.cpp" />
     <ClCompile Include="StandRequest.cpp" />
-    <ClCompile Include="T18-module.cpp" />
+    <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Car.h" />
