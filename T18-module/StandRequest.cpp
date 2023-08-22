@@ -1,5 +1,10 @@
 #include "StandRequest.h"
 
+StandRequest::StandRequest(string name, string number, Car* obj)
+	:Request(name,number,obj)
+{
+}
+
 void StandRequest::show() const
 {
 	cout << "ÔÈÎ" << name<<endl;
