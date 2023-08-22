@@ -6,7 +6,7 @@ Request::Request()
     number = "";
 }
 
-Request::Request(string name, string number, Car obj)
+Request::Request(string name, string number, Car* obj)
     :name(name),number(number)
 {
     arr.push_back(obj);
@@ -43,12 +43,20 @@ vector<Car> Request::getCarList()
     return vector<Car>();
 }
 
-void Request::addCar(Car obj)
+void Request::addCar(Car* obj)
 {
     arr.push_back(obj);
 }
 
 void Request::delCar(int index)
 {
+    for (int i = 0; i < arr.size(); i++)
+    {
+        if ((index-1)==i)
+        {
+            delete arr[i];
+            arr.erase(arr.begin() + i);
+        }
+    }
 }
 
