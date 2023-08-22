@@ -48,11 +48,15 @@ void Request::addCar(Car* obj)
     arr.push_back(obj);
 }
 
-void Request::delCar(int index)
+void Request::delCar()
 {
+    string model;
+    cout << "Ведите бренд машины: ";
+    getline(cin,model);
+
     for (int i = 0; i < arr.size(); i++)
     {
-        if ((index-1)==i)
+        if (arr[i].getModel() == model)
         {
             delete arr[i];
             arr.erase(arr.begin() + i);
