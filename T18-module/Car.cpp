@@ -8,11 +8,7 @@ Car::Car() {
 }
 
 Car::Car(string model, int pass_quantity, float price, int rest, bool isAviable) {
-    setModel(model);
-    setPassQuantity(pass_quantity);
-    setPrice(price);
-    setRest(rest);
-    setIsAviable(isAviable);
+
 }
 
 Car::~Car() {
@@ -57,11 +53,4 @@ bool Car::isAviable1() const {
 
 void Car::setIsAviable(bool isAviable) {
     Car::isAviable = isAviable;
-}
-
-void Car::show() const {
-    cout <<"Модель: " << model << endl;
-    cout <<"Цена: " << price << "USD" << endl;
-    if(isAviable)
-    cout <<"Наличие: " << rest << "шт" << endl;
 }
