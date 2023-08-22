@@ -42,9 +42,9 @@ void Request::getCarList()
 {
     for (size_t i = 0; i < arr.size(); i++)
     {
-        if (arr[i].isAviable())
+        if (arr[i]->isAviable1())
         {
-            arr[i].show();
+            arr[i]->show();
         }
     }
     
