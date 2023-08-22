@@ -6,7 +6,7 @@ void StandRequest::show() const
 
 string StandRequest::type() const
 {
-	return string();
+	return "Заявка на приобретение со стенда";
 }
 
 float StandRequest::calcPrice() const
