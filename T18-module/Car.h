@@ -38,6 +38,8 @@ public:
 
     void setIsAviable(bool isAviable);
 
+    void show()const;
+
 
 
 };

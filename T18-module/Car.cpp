@@ -58,3 +58,10 @@ bool Car::isAviable1() const {
 void Car::setIsAviable(bool isAviable) {
     Car::isAviable = isAviable;
 }
+
+void Car::show() const {
+    cout <<"Модель: " << model << endl;
+    cout <<"Цена: " << price << "USD" << endl;
+    if(isAviable)
+    cout <<"Наличие: " << rest << "шт" << endl;
+}
