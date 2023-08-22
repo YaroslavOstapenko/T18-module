@@ -2,6 +2,7 @@
 #include <string>
 #include <vector>
 #include <algorithm>
+#include <iostream>
 #include "Car.h"
 using namespace std;
 
@@ -23,7 +24,7 @@ public:
 
 	vector<Car> getCarList();
 	void addCar(Car* obj);
-	void delCar(int index);
+	void delCar();
 
 	virtual void show() const=0;
 	virtual string type()const=0;
