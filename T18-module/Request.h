@@ -22,7 +22,7 @@ public:
 	string getNumber()const;
 	void setNumber(string number);
 
-	vector<Car*> getCarList();
+	void getCarList();
 	void addCar(Car* obj);
 	void delCar();
 

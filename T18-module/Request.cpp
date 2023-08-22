@@ -38,9 +38,16 @@ void Request::setNumber(string number)
     }
 }
 
-vector<Car*> Request::getCarList()
+void Request::getCarList()
 {
-    return vector<Car*>();
+    for (size_t i = 0; i < arr.size(); i++)
+    {
+        if (arr[i].isAviable())
+        {
+            arr[i].show();
+        }
+    }
+    
 }
 
 void Request::addCar(Car* obj)
