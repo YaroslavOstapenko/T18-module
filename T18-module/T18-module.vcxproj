@@ -130,6 +130,7 @@
     <ClCompile Include="Car.cpp" />
     <ClCompile Include="CarShop.cpp" />
     <ClCompile Include="DeliveryRequest.cpp" />
+    <ClCompile Include="Exeption.cpp" />
     <ClCompile Include="Request.cpp" />
     <ClCompile Include="StandRequest.cpp" />
     <ClCompile Include="main.cpp" />
@@ -138,6 +139,7 @@
     <ClInclude Include="Car.h" />
     <ClInclude Include="CarShop.h" />
     <ClInclude Include="DeliveryRequest.h" />
+    <ClInclude Include="Exeption.h" />
     <ClInclude Include="Request.h" />
     <ClInclude Include="StandRequest.h" />
   </ItemGroup>
