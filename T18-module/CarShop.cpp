@@ -20,7 +20,7 @@ CarShop::~CarShop() {
 void CarShop::setName(string name) {
     if (name.length()<=0)
     {
-        cout <<"Поле название магазина не заполенно!" << endl;
+        cout <<"Поле название магазина не заполнено!" << endl;
         return;
     }
     CarShop::name=name;
